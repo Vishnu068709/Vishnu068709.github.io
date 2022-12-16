@@ -5,7 +5,7 @@ require LWP::UserAgent;
 use JSON;
 
 # Send JSON 
-#./sc.pl http://localhost:3000/comic '{title=>"Les Tuniques Bleues" , authors=>["Raoul Cauvin" , "Willy Lambil"]}'
+#./sc.pl http://localhost:3000/comic '{title=>"Les Tuniques Bleues" , authors=>["Vishnu VN"]}'
 
 my $req = HTTP::Request->new( 'POST', shift );
 my $json = to_json ( eval (shift));
